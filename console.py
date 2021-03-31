@@ -119,6 +119,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
             return
         listA = args.split()
+        print(listA)
         if listA[0] not in HBNBCommand.classes:
             print("**  class doesn't exit  **")
             return
