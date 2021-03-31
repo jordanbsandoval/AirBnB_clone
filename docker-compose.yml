@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/data/
+    command: sh -c "while true; do sleep 1; done"
+  mysql:
+    image: "mysql:5.7.27"
+    ports:
+      - "3306:3306"
+    volumes:
+      - "db-data:/var/lib/mysql"
+    environment:
+      - MYSQL_ROOT_PASSWORD=1015184114
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=1015184114
+volumes:
+  db-data:
