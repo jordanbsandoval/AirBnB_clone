@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """importando librerias"""
 from flask import Flask
-
-"""obteniendo objeto de la libreria flask"""
 app = Flask(__name__)
 
 
