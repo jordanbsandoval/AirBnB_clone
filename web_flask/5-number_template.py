@@ -22,7 +22,7 @@ def cprofile(name):
 @app.route('/python/', defaults={'text': 'is cool'}, strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def aprofile(text):
-    return "Python " + str(text).replace("_", " ")
+    return "Python " + str(text)
 
 
 @app.route('/number/<int:n>', strict_slashes=False)
