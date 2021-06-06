@@ -16,8 +16,7 @@ def helloHbnb():
 
 @app.route('/c/<name>', strict_slashes=False)
 def cprofile(name):
-    return "C " + str(name)
-
+    return "C " + str(name).replace("_", " ")
 
 """condicion """
 if __name__ == '__main__':
